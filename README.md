@@ -4,6 +4,12 @@
 #### Selenium is an open-source testing tool, which means it can be downloaded from the internet without spending anything. Selenium is a functional testing tool and also compatible with non-functional testing tools as well.
 <br>
 
+## Selenium WebDriver
+Selenium WebDriver is a web framework that permits you to execute cross-browser tests. This tool is used for automating web-based application testing to verify that it performs expectedly.
+Selenium WebDriver allows you to choose a programming language of your choice to create test scripts. As discussed earlier, it is an advancement over Selenium RC to overcome a few limitations. Selenium WebDriver is not capable of handling window components, but this drawback can be overcome by using tools like Sikuli, Auto IT, etc. <br>
+[Getting Started with Selenium WebDriver for Automation Testing](https://www.browserstack.com/guide/selenium-webdriver-tutorial)
+
+
 ## Links :link:
 * [Selenium](https://www.selenium.dev/)
 * [Selenium Python](https://pypi.org/project/selenium/) :snake:
