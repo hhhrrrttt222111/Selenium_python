@@ -33,3 +33,9 @@ from selenium import webdriver
 
 driver = webdriver.Chrome(executable_path=r"<LOCATION OF CHROMEDRIVER OR GECKODRIVER>")
 ```
+## Required Modules
+```
+pip install requests
+pip install beautifulsoup4
+pip install lxml
+```
