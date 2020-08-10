@@ -24,7 +24,7 @@ Selenium WebDriver allows you to choose a programming language of your choice to
 * [PyCharm](https://www.jetbrains.com/pycharm/download/)
 <br>
 
-## Getting Started
+## Getting Started with Selenium
 ```
 pip install selenium
 ```
@@ -33,6 +33,21 @@ from selenium import webdriver
 
 driver = webdriver.Chrome(executable_path=r"<LOCATION OF CHROMEDRIVER OR GECKODRIVER>")
 ```
+
+## INSTALLATION
+```bash
+git clone https://github.com/hhhrrrttt222111/Selenium_python.git
+
+cd Selenium_python
+
+python3 -m pip install -r requirements.txt
+```
+
+## USAGE
+```bash
+python3 Pyselenium.py
+```
+
 ## Required Modules
 ```
 pip install requests
