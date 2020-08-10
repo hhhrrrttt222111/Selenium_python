@@ -47,7 +47,7 @@ input_category = input('Search Category from Above : ')
 print()
 input_search = input(f'Search  {input_category} : ')
 
-driver = webdriver.Chrome(executable_path=r"D:\Softwares\chromedriver_win32\chromedriver.exe")
+driver = webdriver.Chrome('../drivers/chromedriver.exe')
 driver.get("https://www.amazon.in/")
 
 

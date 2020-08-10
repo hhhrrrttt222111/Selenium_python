@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import time
 
 url = 'https://www.geeksforgeeks.org/'
-driver = webdriver.Chrome(executable_path=r"D:\Softwares\chromedriver_win32\chromedriver.exe")
+driver = webdriver.Chrome('../drivers/chromedriver.exe')
 driver.get(url)
 
 titles = []

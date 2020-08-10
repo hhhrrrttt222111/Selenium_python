@@ -6,7 +6,7 @@ username = input('Enter Your Email : ')
 password = input('Enter Your Password : ')
 
 
-driver = webdriver.Chrome(executable_path=r"D:\Softwares\chromedriver_win32\chromedriver.exe")
+driver = webdriver.Chrome('../drivers/chromedriver.exe')
 driver.get('https://accounts.google.com/')
 
 input_email = driver.find_element_by_name('identifier')

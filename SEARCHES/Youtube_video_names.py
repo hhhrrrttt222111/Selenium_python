@@ -6,7 +6,7 @@ import time
 
 input_search = input('Enter Youtube Search : ')
 
-driver = webdriver.Chrome(executable_path=r"D:\Softwares\chromedriver_win32\chromedriver.exe")
+driver = webdriver.Chrome('../drivers/chromedriver.exe')
 driver.get('https://www.youtube.com/')
 
 titles = []

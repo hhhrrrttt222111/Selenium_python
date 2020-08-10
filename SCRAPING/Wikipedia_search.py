@@ -8,7 +8,7 @@ import time
 input_search = input('Search Wikipedia : ')
 
 
-driver = webdriver.Chrome(executable_path=r"D:\Softwares\chromedriver_win32\chromedriver.exe")
+driver = webdriver.Chrome('../drivers/chromedriver.exe')
 driver.get("https://www.wikipedia.org/")
 
 search = driver.find_element_by_name('search')

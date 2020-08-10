@@ -6,7 +6,7 @@ input_name = input('Enter Name : ')
 input_email = input('Enter Email : ')
 input_pass = input('Enter Password : ')
 
-driver = webdriver.Chrome(executable_path=r"D:\Softwares\chromedriver_win32\chromedriver.exe")
+driver = webdriver.Chrome('../drivers/chromedriver.exe')
 driver.get('https://www.swiggy.com/')
 
 signup = driver.find_element_by_class_name('r2iyh')

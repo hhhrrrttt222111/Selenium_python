@@ -13,7 +13,7 @@ input_year = input('Enter Year of Birth : ')
 input_gender = input('Select Gender : Male(1), Female(2), Custom(-1) : ')
 
 
-browser = webdriver.Chrome(executable_path=r"D:\Softwares\chromedriver_win32\chromedriver.exe")
+browser = webdriver.Chrome('../drivers/chromedriver.exe')
 browser.get("http://www.facebook.com")
 
 

@@ -2,7 +2,7 @@ from selenium import webdriver
 from bs4 import BeautifulSoup
 
 
-driver = webdriver.Chrome(executable_path=r"D:\Softwares\chromedriver_win32\chromedriver.exe")
+driver = webdriver.Chrome('../drivers/chromedriver.exe')
 driver.get('https://www.worldometers.info/coronavirus/countries-where-coronavirus-has-spread/')
 
 

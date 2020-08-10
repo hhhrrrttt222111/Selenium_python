@@ -1,15 +1,19 @@
+# import necessary modules
 from selenium import webdriver
 from bs4 import BeautifulSoup
 import time
 
+# Set the location of your Webdriver
+# driver = webdriver.Firefox()  // For firefox
+driver = webdriver.Chrome('../drivers/chromedriver.exe')
 
-driver = webdriver.Chrome(executable_path=r"D:\Softwares\chromedriver_win32\chromedriver.exe")
+# Set URL
 driver.get('https://www.imdb.com/chart/top/')
-
 
 movies = []
 rating = []
 
+# Scrape content
 content = driver.page_source
 soup = BeautifulSoup(content, 'html.parser')
 for a in soup.findAll('td', attrs={'class': 'titleColumn'}):

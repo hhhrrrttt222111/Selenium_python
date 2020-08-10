@@ -6,7 +6,7 @@ username = input('Enter Your Username : ')
 password = input('Enter Your Password : ')
 
 
-driver = webdriver.Chrome(executable_path=r"D:\Softwares\chromedriver_win32\chromedriver.exe")
+driver = webdriver.Chrome('../drivers/chromedriver.exe')
 driver.get('https://twitter.com/login')
 
 
