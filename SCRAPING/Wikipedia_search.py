@@ -4,25 +4,24 @@ from bs4 import BeautifulSoup
 import requests
 import time
 
+def wikipedia():
+    input_search = input('Search Wikipedia : ')
 
-input_search = input('Search Wikipedia : ')
+    driver = webdriver.Chrome('../drivers/chromedriver.exe')
+    driver.get("https://www.wikipedia.org/")
 
+    search = driver.find_element_by_name('search')
+    search.send_keys(input_search)
+    search.send_keys(Keys.ENTER)
 
-driver = webdriver.Chrome('../drivers/chromedriver.exe')
-driver.get("https://www.wikipedia.org/")
+    time.sleep(5)
 
-search = driver.find_element_by_name('search')
-search.send_keys(input_search)
-search.send_keys(Keys.ENTER)
+    url = driver.current_url
 
-time.sleep(5)
+    res = requests.get(url)
+    res.raise_for_status()
 
-url = driver.current_url
+    wiki = BeautifulSoup(res.text, 'html.parser')
 
-res = requests.get(url)
-res.raise_for_status()
-
-wiki = BeautifulSoup(res.text, 'html.parser')
-
-for i in wiki.select('p'):
-    print(i.getText(), end='')
+    for i in wiki.select('p'):
+        print(i.getText(), end='')

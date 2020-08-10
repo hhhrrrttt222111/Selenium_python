@@ -1,27 +1,24 @@
 import sys
 import argparse
-from os import system, name
+import _mods.menu as menu
 
 
-def main_menu():
-    clear_screen()
-    print(f'''
-CHOOSE OPTION :
-
-    Login Automation          [1]  
-    Scarping with Selenium    [2]    
-    Search                    [3]    
-    Sign Up Automation        [4]   
-
-    ''')
-
-
+menu.main_menu()
 ch = int(input("    --> "))
 
+if ch == 1:
+    menu.login()
 
+elif ch == 2:
+    menu.scraping()
 
-def clear_screen():
-    if name == 'nt':
-        _ = system('cls')
-    else:
-        _ = system('clear')
+elif ch == 3:
+    menu.search()
+
+elif ch == 4:
+    menu.signup()
+
+else:
+    print('INVALID OPTION  \n TRY AGAIN')
+    sys.exit()
+
