@@ -2,6 +2,7 @@ import sys
 import argparse
 import _mods.menu as menu
 
+driver = '../drivers/chromedriver.exe'
 
 menu.main_menu()
 ch = int(input("    --> "))

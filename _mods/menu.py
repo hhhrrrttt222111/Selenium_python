@@ -60,7 +60,7 @@ def login():
         gl.google_login()
 
     elif ch == 3:
-        pint.pinterest_login()
+        pint.pinterest_login(d)
 
     elif ch == 4:
         sp.spotify_login()
@@ -76,7 +76,7 @@ def login():
 def scraping():
     def scraping_menu():
         clear_screen()
-        global ch
+        global ch1
         print(f'''
     CHOOSE OPTION :
 
@@ -89,27 +89,27 @@ I       Wikipedia               [6]
 
         ''')
 
-        ch = int(input("    --> "))
+        ch1 = int(input("    --> "))
         print('\n')
 
     scraping_menu()
 
-    if ch == 1:
+    if ch1 == 1:
         billboard.billboard()
 
-    elif ch == 2:
+    elif ch1 == 2:
         codechef.codechef()
 
-    elif ch == 3:
+    elif ch1 == 3:
         covid.covid()
 
-    elif ch == 4:
+    elif ch1 == 4:
         djmag.djmag()
 
-    elif ch == 5:
+    elif ch1 == 5:
         imdb.imdb()
 
-    elif ch == 6:
+    elif ch1 == 6:
         wiki.wikipedia()
 
     else:
@@ -120,7 +120,7 @@ I       Wikipedia               [6]
 def search():
     def search_menu():
         clear_screen()
-        global ch
+        global ch2
         print(f'''
     CHOOSE OPTION :
 
@@ -130,18 +130,18 @@ def search():
 
         ''')
 
-        ch = int(input("    --> "))
+        ch2 = int(input("    --> "))
         print('\n')
 
     search_menu()
 
-    if ch == 1:
+    if ch2 == 1:
         amazon.amazon()
 
-    elif ch == 2:
+    elif ch2 == 2:
         flipkart.flipkart()
 
-    elif ch == 3:
+    elif ch2 == 3:
         yt.youtube()
 
     else:
@@ -152,7 +152,7 @@ def search():
 def signup():
     def signup_menu():
         clear_screen()
-        global ch
+        global ch3
         print(f'''
     CHOOSE OPTION :
 
@@ -161,15 +161,15 @@ def signup():
 
         ''')
 
-        ch = int(input("    --> "))
+        ch3 = int(input("    --> "))
         print('\n')
 
     signup_menu()
 
-    if ch == 1:
+    if ch3 == 1:
         fbsign.fb_signup()
 
-    elif ch == 2:
+    elif ch3 == 2:
         swiggy.swiggy()
 
     else:

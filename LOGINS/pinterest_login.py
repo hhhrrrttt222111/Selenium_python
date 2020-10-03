@@ -2,11 +2,11 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
 
-def pinterest_login():
+def pinterest_login(d):
     username = input('Enter Your Username : ')
     password = input('Enter Your Password : ')
 
-    driver = webdriver.Chrome('../drivers/chromedriver.exe')
+    driver = webdriver.Chrome(d)
     driver.get('https://in.pinterest.com/')
 
     login = driver.find_element_by_class_name('Jrn')
