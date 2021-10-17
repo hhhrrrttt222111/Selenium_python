@@ -26,7 +26,7 @@ def main_menu():
 CHOOSE OPTION :
 
     Login Automation          [1]  
-    Scarping with Selenium    [2]    
+    Scraping with Selenium    [2]    
     Search                    [3]    
     Sign Up Automation        [4]   
 
