@@ -6,6 +6,7 @@ import LOGINS.pinterest_login as pint
 import LOGINS.twitter_login as twt
 import LOGINS.spotify_login as sp
 import LOGINS.instagram_login as inst
+import LOGINS.discord_login as disc
 
 import SCRAPING.Billboard_100 as billboard
 import SCRAPING.CodeChef as codechef
@@ -47,6 +48,7 @@ def login():
         Spotify       [4]   
         Twitter       [5]   
         Instagram     [6]
+        Discord       [7]
     
         ''')
 
@@ -72,6 +74,9 @@ def login():
 
     elif ch == 6:
         inst.instagram_login()
+
+    elif ch == 7:
+        disc.discord_login()
 
     else:
         print('INVALID OPTION  \n TRY AGAIN')
